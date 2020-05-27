@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <title>Reaches of Argon | Web App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=PT+Serif&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c425311c1a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.scss">
+</head>
+
+<body>
+  <a href="#" class="clear-button"><i class="fas fa-trash"></i></a>
+  <a href="#" class="add-button"><i class="fas fa-plus-circle"></i></a>
+  <div class="main">
+    <h1>Argon</h1>
+    <br>
+    <div class="subtitle">Official Companion Webapp</div>
+    <br><br>
+    <div class="grid-container">
+      <div class="player">
+        <div class="player-score">
+          0
+        </div>
+      </div>
+      <div class="player">
+        <div class="player-score">
+          0
+        </div>
+      </div>
+      <div class="player">
+        <div class="player-score">
+          0
+        </div>
+      </div>
+      <div class="player">
+        <div class="player-score">
+          0
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="shade invisible">
+  </div>
+  <div class="add unfocused">
+    <div class="content">
+      <h2>Add Island</h2>
+      <br>
+      <select name="Islands" id="islands">
+      </select><br><br>
+      <select name="Players" id="players">
+        <option value="1">Player 1</option>
+        <option value="2">Player 2</option>
+        <option value="3">Player 3</option>
+        <option value="4">Player 4</option>
+      </select><br><br><br>
+      <a href="#" class="confirm-add">CONFIRM</a>
+    </div>
+  </div>
+  <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>

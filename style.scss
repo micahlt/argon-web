@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+  text-align: center;
+}
+
+.clear-button {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #283D3B;
+
+  .fa-trash {
+    font-size: 1.7em;
+  }
+}
+
+.add-button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: #283D3B;
+
+  .fa-plus-circle {
+    font-size: 1.85em;
+  }
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  overflow-y: scroll;
+  background-color: #EDDDD4;
+
+  h1 {
+    font-family: 'Cinzel', fantasy;
+    color: #772E25;
+    font-size: 3em;
+    text-align: center;
+    padding-top: 40px;
+    line-height: 19px;
+  }
+
+  .subtitle {
+    text-align: center;
+    font-family: 'PT Serif', serif;
+    color: #C44536;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 4vh 1px;
+    grid-template-areas: '.' '.' '.' '.';
+    padding-left: 10vw;
+
+    .player {
+      background-color: #EDDDD4;
+      width: 80vw;
+      height: 10vh;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      border-radius: 4.5px;
+
+      .player-score {
+        font-family: 'PT Serif', serif;
+        font-size: 7vh;
+        text-align: right;
+        padding-right: 20px;
+        color: #772E25;
+      }
+    }
+  }
+}
+
+.add {
+  background-color: #EDDDD4;
+  height: max-content;
+  width: 82vw;
+  position: absolute;
+  text-align: center;
+  transition: 1s;
+
+  .content {
+    padding: 4vw;
+
+    h2 {
+      font-family: 'Cinzel', fantasy;
+      color: #772E25;
+    }
+
+    select {
+      width: 50vw;
+      padding: 10px;
+    }
+
+    .confirm-add {
+      background-color: #772E25;
+      padding: 15px;
+      color: #EDDDD4;
+      border-radius: 5px;
+      text-decoration: none;
+      font-family: 'PT Serif', serif;
+    }
+  }
+}
+
+.unfocused {
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.35s;
+}
+
+.focused {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.35s;
+}
+
+.shade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.78);
+  height: 100vh;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.invisible {
+  opacity: 0;
+  transition: 0.3s;
+  display: none;
+}
+
+.visible {
+  opacity: 1;
+  transition: 0.3s;
+  display: block;
+}
