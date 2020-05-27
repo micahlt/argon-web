@@ -35,7 +35,8 @@ function finishAdding() {
   let islandToAdd = grab.id("islands");
   let selectedPlayer = grab.id("players");
   let playerToAdd = selectedPlayer.options[selectedPlayer.selectedIndex].value;
-  let pointsToAdd = islandToAdd.options[islandToAdd.selectedIndex].value;
+  let pointsToAdd = parseInt(islandToAdd.options[islandToAdd.selectedIndex].value);
+  pointsToAdd += parseInt(window.localStorage.getItem("player" + playerToAdd + "score"));
   window.localStorage.setItem("player" + playerToAdd + "score", pointsToAdd);
   exitAdding();
   updatePointValues();
