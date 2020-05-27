@@ -1,8 +1,26 @@
 {
   "devDependencies": {
+    "parcel": "^1.12.4",
     "sass": "^1.26.5"
   },
   "dependencies": {
     "crabby-grab": "^1.0.5"
-  }
+  },
+  "name": "argon-web",
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/micahlt/argon-web.git"
+  },
+  "author": "Micah Lindley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/micahlt/argon-web/issues"
+  },
+  "homepage": "https://github.com/micahlt/argon-web#readme",
+  "description": ""
 }
